@@ -1,31 +1,24 @@
-package project1.animals.feline;
+import { Feline } from "./Feline";
 
 // Better at random number generating than java.util.Random
-import java.security.SecureRandom;
+// import java.security.SecureRandom;
 
-public class Cat extends Feline {
+export default class Cat extends Feline {
 
 	/**
 	 *  Disobey order and do something random
 	 */
-	public void sleep() {
-		doRandomAction();
-	}
-
-	/**
-	 *  Make a cat sound
-	 */
-	public void makeNoise() {
-		System.out.println(toString() + " meowed");
+	public sleep() {
+		this.doRandomAction();
 	}
 
 	/**
 	 *  Make the cat do a random action
 	 */
-	private void doRandomAction() {
+	private doRandomAction() {
 		// create random number between 0 and 5
-		int choice = (new SecureRandom()).nextInt(5);
-		String action = "";
+		var choice = Math.floor(Math.random() * 6);
+		var action = "";
 		switch (choice) {
 		// Sleep
 		case 0:  super.sleep();
@@ -41,7 +34,7 @@ public class Cat extends Feline {
 		case 5:  action = "is now scratching a tree";
 			break;
 		}
-		System.out.println(toString() + " " + action);
+		console.log(this.toString() + " " + action);
 	}
 
 }
