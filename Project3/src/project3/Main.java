@@ -16,7 +16,7 @@ public class Main {
 		Simulator simulator = Simulator.getSimulator();
 		simulator.setDefaultCustomers();
     simulator.setDefaultStore();
-		simulator.setNumDays(5);
+		simulator.setNumDays(35);
 		simulator.run();
 	}
 }
