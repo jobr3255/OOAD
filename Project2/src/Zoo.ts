@@ -1,4 +1,4 @@
-import { Animal, Bark, Howel, Meow, Roar, Growl, Trumpet, Grunt } from "./animals";
+import { Animal, Bark, Howl, Meow, Roar, Growl, Trumpet, Grunt } from "./animals";
 import { Cat, Lion, Tiger } from "./animals/feline";
 import { Dog, Wolf } from "./animals/canine";
 import { Elephant, Hippo, Rhino } from "./animals/pachyderm";
@@ -28,8 +28,8 @@ export class Zoo {
 		// Add canines to zoo
 		this.addAnimal(new Dog("Dexter", new Bark()));
 		this.addAnimal(new Dog("David", new Bark()));
-		this.addAnimal(new Wolf("Walter", new Howel()));
-		this.addAnimal(new Wolf("Wade", new Howel()));
+		this.addAnimal(new Wolf("Walter", new Howl()));
+		this.addAnimal(new Wolf("Wade", new Howl()));
 		// Add paychyderms
 		this.addAnimal(new Elephant("Ellie", new Trumpet()));
 		this.addAnimal(new Elephant("Egon", new Trumpet()));

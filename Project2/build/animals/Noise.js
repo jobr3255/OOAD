@@ -1,5 +1,12 @@
 "use strict";
+/**
+ *  This file holds the Noise classes and use the strategy patter
+ */
 exports.__esModule = true;
+/**
+ *  These are all the specific opperations for each animal
+ */
+// Dogs
 var Bark = /** @class */ (function () {
     function Bark() {
     }
@@ -9,15 +16,17 @@ var Bark = /** @class */ (function () {
     return Bark;
 }());
 exports.Bark = Bark;
-var Howel = /** @class */ (function () {
-    function Howel() {
+// Wolfs
+var Howl = /** @class */ (function () {
+    function Howl() {
     }
-    Howel.prototype.getNoise = function () {
-        return "howeled";
+    Howl.prototype.getNoise = function () {
+        return "howled";
     };
-    return Howel;
+    return Howl;
 }());
-exports.Howel = Howel;
+exports.Howl = Howl;
+// Cats
 var Meow = /** @class */ (function () {
     function Meow() {
     }
@@ -27,6 +36,7 @@ var Meow = /** @class */ (function () {
     return Meow;
 }());
 exports.Meow = Meow;
+// Lions
 var Roar = /** @class */ (function () {
     function Roar() {
     }
@@ -36,6 +46,7 @@ var Roar = /** @class */ (function () {
     return Roar;
 }());
 exports.Roar = Roar;
+// Tigers
 var Growl = /** @class */ (function () {
     function Growl() {
     }
@@ -45,6 +56,7 @@ var Growl = /** @class */ (function () {
     return Growl;
 }());
 exports.Growl = Growl;
+// Elephants
 var Trumpet = /** @class */ (function () {
     function Trumpet() {
     }
@@ -54,6 +66,7 @@ var Trumpet = /** @class */ (function () {
     return Trumpet;
 }());
 exports.Trumpet = Trumpet;
+// Hippos and rhinos
 var Grunt = /** @class */ (function () {
     function Grunt() {
     }

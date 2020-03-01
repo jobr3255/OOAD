@@ -22,9 +22,9 @@ export class Bark implements Noise{
 }
 
 // Wolfs
-export class Howel implements Noise{
+export class Howl implements Noise{
   getNoise(){
-    return "howeled";
+    return "howled";
   }
 }
 

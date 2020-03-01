@@ -26,8 +26,8 @@ var Zoo = /** @class */ (function () {
         // Add canines to zoo
         this.addAnimal(new canine_1.Dog("Dexter", new animals_1.Bark()));
         this.addAnimal(new canine_1.Dog("David", new animals_1.Bark()));
-        this.addAnimal(new canine_1.Wolf("Walter", new animals_1.Howel()));
-        this.addAnimal(new canine_1.Wolf("Wade", new animals_1.Howel()));
+        this.addAnimal(new canine_1.Wolf("Walter", new animals_1.Howl()));
+        this.addAnimal(new canine_1.Wolf("Wade", new animals_1.Howl()));
         // Add paychyderms
         this.addAnimal(new pachyderm_1.Elephant("Ellie", new animals_1.Trumpet()));
         this.addAnimal(new pachyderm_1.Elephant("Egon", new animals_1.Trumpet()));

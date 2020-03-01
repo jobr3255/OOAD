@@ -1,5 +1,6 @@
 import { Zoo } from "./Zoo";
 import { Zookeeper } from "./Zookeeper";
+import { ZooAnnouncer } from "./ZooAnnouncer";
 
 class Main {
   constructor() {
@@ -9,12 +10,13 @@ class Main {
     var zoo = new Zoo();
 		zoo.setDefaultAnimals();
 
-		var zookeeper:Zookeeper = new Zookeeper();
-		zookeeper.wakeAnimals(zoo);
-		zookeeper.rollCall(zoo);
-		zookeeper.feedAnimals(zoo);
-		zookeeper.exerciseAnimals(zoo);
-		zookeeper.closeZoo(zoo);
+		var zookeeper: Zookeeper = new Zookeeper(zoo);
+    var zooAnnouncer: ZooAnnouncer = new ZooAnnouncer(zookeeper);
+		zookeeper.wakeAnimals();
+		zookeeper.rollCall();
+		zookeeper.feedAnimals();
+		zookeeper.exerciseAnimals();
+		zookeeper.closeZoo();
   }
 }
 

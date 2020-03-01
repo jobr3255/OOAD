@@ -4,6 +4,8 @@ var Animal = /** @class */ (function () {
     /**
      *  @param name String
      *  Name of the animal
+     *  @param noise Noise
+     *  The Noise object that the animal will make
      */
     function Animal(name, noise) {
         this.name = name;
@@ -12,6 +14,8 @@ var Animal = /** @class */ (function () {
     Animal.prototype.makeNoise = function () {
         if (this.noise != null)
             console.log(this.toString() + " " + this.noise.getNoise());
+        else // If noise is null, do default behavior
+            console.log(this.toString() + " is silent");
     };
     /**
      *  Prints that the animal in now roaming
