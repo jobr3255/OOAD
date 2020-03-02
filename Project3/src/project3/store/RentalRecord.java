@@ -3,6 +3,7 @@ package project3.store;
 import java.util.ArrayList;
 import java.util.List;
 import project3.rental.car.*;
+import project3.rental.Rental;
 import project3.rental.option.*;
 import project3.customer.Customer;
 
@@ -13,7 +14,7 @@ public class RentalRecord {
 
 	public static enum RentalStatus { ACTIVE, COMPLETE }
 
-	private List<Car> carsRented;
+	private List<Rental> carsRented;
 	private int dayRented;
 	private int nightsRented;
 	private Customer customer;
@@ -22,7 +23,7 @@ public class RentalRecord {
 
 
 	public RentalRecord(CarRentalStore store, Customer customer, int day, int nights) {
-		this.carsRented = new ArrayList<Car>();
+		this.carsRented = new ArrayList<Rental>();
 		this.status = RentalStatus.ACTIVE;
     this.customer = customer;
     this.dayRented = day;
@@ -40,7 +41,12 @@ public class RentalRecord {
 			this.status = RentalStatus.COMPLETE;
 			// Copy rented cars so the rental record still has the cars with options
 			List<Car> returnCars = new ArrayList<Car>();
-			for(Car car : this.carsRented){
+			for(Rental rental : this.carsRented){
+				if(rental instanceof Option){
+					Option op = (Option)rental;
+					rental = op.rootRental();
+				}
+				Car car = (Car)rental;
 				returnCars.add(car.copy());
 			}
 			this.store.addCars(returnCars);
@@ -54,8 +60,9 @@ public class RentalRecord {
 	 *		Returns true if the car was added and false otherwise
 	 *	Adds car to list of rented cars if the list does not already contain that car
 	 */
-  public boolean addCar(Car rentalCar){
+  public boolean addCar(Rental rentalCar){
 		if(!this.carsRented.contains(rentalCar)){
+			rentalCar.setNightsRented(this.nightsRented);
 			this.carsRented.add(rentalCar);
 			return true;
 		}
@@ -72,11 +79,8 @@ public class RentalRecord {
 	 */
 	public int total() {
 		int total = 0;
-		for(Car c : carsRented) {
-			total += c.rentalPrice() * nightsRented;
-			for(Option op : c.options()){
-				total += op.rentalPrice();
-			}
+		for(Rental c : carsRented) {
+			total += c.rentalPrice();
 		}
 		return total;
 	}
@@ -97,7 +101,7 @@ public class RentalRecord {
 		return this.nightsRented;
 	}
 
-	public List<Car> rentals() {
+	public List<Rental> rentals() {
 		return this.carsRented;
 	}
 
@@ -121,12 +125,8 @@ public class RentalRecord {
     else if(this.status == RentalStatus.COMPLETE)
       formatted += ", Status: COMPLETE";
     formatted += "\nRented: (" + this.nightsRented + " nights)";
-    for(Car c : carsRented) {
-      formatted += "\n  " + c.toString();
-			if(c.options().size() > 0)
-      	formatted += " - Options: " + c.options().toString();
-			else
-      	formatted += " - No options";
+    for(Rental c : carsRented) {
+      formatted += "\n  " + c.description();
 		}
 		return formatted;
 	}

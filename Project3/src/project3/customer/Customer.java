@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import project3.rental.car.Car;
+import project3.rental.Rental;
 import project3.Day;
 import project3.observer.Observer;
 import project3.store.RentalRecord;
 
 /**
- *
+ *	Customer class implements the Observer pattern
  */
 abstract public class Customer implements Observer {
 
-	private List<Car> rentals;
+	private List<Rental> rentals;
 	private List<RentalRecord> rentalRecords;
 	private String name;
 
 	public Customer(String name) {
 		this.name = name;
-		this.rentals = new ArrayList<Car>();
+		this.rentals = new ArrayList<Rental>();
 		this.rentalRecords = new ArrayList<RentalRecord>();
 	}
 
@@ -35,7 +35,7 @@ abstract public class Customer implements Observer {
 	 */
 	public void returnCars(RentalRecord rr) {
 		this.rentalRecords.remove(rr);
-		List<Car> cars = rr.rentals();
+		List<Rental> cars = rr.rentals();
 		this.rentals.removeAll(cars);
 		this.rentalRecords.remove(rr);
 		rr.complete();
@@ -62,7 +62,7 @@ abstract public class Customer implements Observer {
 	 *  Getters
 	 **************/
 
-	public List<Car> currentRentals() {
+	public List<Rental> currentRentals() {
 		return this.rentals;
 	}
 

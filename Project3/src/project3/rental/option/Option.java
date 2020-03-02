@@ -7,12 +7,12 @@ import project3.store.CarRentalStore;
  * This is the decorator for car to add options to the car
  */
 public abstract class Option extends Rental {
-	// protected Car car;
+	protected Rental rental;
 	public abstract int rentalPrice();
-
-	// public abstract String description();
-
-	// public int getRentalPrice() {
-	// 	return this.car.getRentalPrice() + rentalPrice();
-	// }
+	public abstract String description();
+	public Rental rootRental(){
+		if(rental instanceof Option)
+			return ((Option)rental).rootRental();
+		return rental;
+	}
 }

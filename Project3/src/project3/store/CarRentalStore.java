@@ -50,11 +50,10 @@ public class CarRentalStore {
 	/**
 	 *  Removes a random car in the inventory, adds it to the rental record, and returns the car
 	 */
-  public Car rentCar(RentalRecord rr, List<Option> options){
+  public Car rentCar(RentalRecord rr){
     int carIndex = (new SecureRandom()).nextInt(this.inventory.size());
     Car rentalCar = this.inventory.get(carIndex);
     this.inventory.remove(carIndex);
-    rentalCar.setOptions(options);
     // If ledger already contains this rental record, update it
     if(this.ledger.contains(rr)){
       for(RentalRecord update : this.ledger){

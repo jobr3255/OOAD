@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import project3.rental.car.*;
+import project3.rental.Rental;
 import project3.rental.option.*;
 import project3.store.*;
 import project3.*;
@@ -119,8 +120,8 @@ public class MyUnitTest extends TestCase {
     simulator.setDefaultStore();
     Customer cust = new Casual("Cool Guy");
     RentalRecord rr = simulator.simulateCustomerRental(cust);
-    List<Car> rented = rr.rentals();
-    List<Car> customerCars = cust.currentRentals();
+    List<Rental> rented = rr.rentals();
+    List<Rental> customerCars = cust.currentRentals();
 		System.out.println("Verifying customer has rented car...");
     assertEquals("Customer car does not have a rented car.", rented, customerCars);
 		System.out.println("Success.");
@@ -269,15 +270,13 @@ public class MyUnitTest extends TestCase {
     Customer cust = new Casual("Cool Guy");
     // Rent car for 3 nights
     RentalRecord rentalRecord = new RentalRecord(simulator.getStore(), cust, 1, 3);
-    List<Option> op1 = new ArrayList<Option>();
-    op1.add(new GPS());
-    op1.add(new CarSeat());
-    op1.add(new CarSeat());
-    op1.add(new CarSeat());
-    simulator.getStore().rentCar(rentalRecord, op1);
-    List<Option> op2 = new ArrayList<Option>();
-    op2.add(new Radio());
-    simulator.getStore().rentCar(rentalRecord, op2);
+    Rental rental1 = simulator.getStore().rentCar(rentalRecord);
+    rental1 = new GPS(rental1);
+    rental1 = new CarSeat(rental1);
+    rental1 = new CarSeat(rental1);
+    rental1 = new CarSeat(rental1);
+    Rental rental2 = simulator.getStore().rentCar(rentalRecord);
+    rental2 = new Radio(rental1);
     int initialTotal = rentalRecord.total();
     cust.rentCars(rentalRecord);
 		System.out.println(rentalRecord);

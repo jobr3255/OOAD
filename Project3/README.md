@@ -1,4 +1,4 @@
-# Project 1
+# Project 3
 Chloe/Josh Brown
 
 ### Compile the program
@@ -13,5 +13,16 @@ Chloe/Josh Brown
 
 ### Compile and run the program
 ```
-./project1.sh
+./project3.sh
 ```
+
+### Compile and run tests
+```
+./test.sh
+```
+
+### Patterns and implementation
+- Factory
+- Observer
+- Singleton
+- Decorator

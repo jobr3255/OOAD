@@ -1,6 +1,7 @@
 package project3;
 
 import project3.rental.car.*;
+import project3.rental.Rental;
 import project3.store.*;
 import project3.customer.*;
 import project3.rental.option.*;
@@ -143,30 +144,29 @@ public class Simulator
 		// create rental record
 		RentalRecord rentalRecord = new RentalRecord(this.store, customer, this.today.today(), numNights);
 		for(int i = 0; i < willRent; i++){
-			this.store.rentCar(rentalRecord, chooseOptions());
+			chooseOptions(this.store.rentCar(rentalRecord));
 		}
 		customer.rentCars(rentalRecord);
 		return rentalRecord;
 	}
 
-	public List<Option> chooseOptions(){
+	public void chooseOptions(Rental rentalCar){
 		List<Option> options = new ArrayList<Option>();
 		// Decide to add GPS option or not
 		if((new SecureRandom()).nextInt(100) > 50){
-			options.add(new GPS());
+			rentalCar = new GPS(rentalCar);
 		}
 		// Decide to add radio option or not
 		if((new SecureRandom()).nextInt(100) > 50){
-			options.add(new Radio());
+			rentalCar = new Radio(rentalCar);
 		}
 		// Decide to add car seats option or not
 		if((new SecureRandom()).nextInt(100) > 50){
 			int numCarSeats = (new SecureRandom()).nextInt(4);
 			for(int i=0; i < numCarSeats; i++){
-				options.add(new CarSeat());
+				rentalCar = new CarSeat(rentalCar);
 			}
 		}
-		return options;
 	}
 
 	/**

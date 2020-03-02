@@ -9,4 +9,11 @@ import project3.observer.Subject;
 public abstract class Rental {
   // Defines a price variable that must be implemented in subclasses
   abstract public int rentalPrice();
+  // Defines a decription variable that must be implemented in subclasses
+  abstract public String description();
+
+  protected int nightsRented;
+  public void setNightsRented(int nights){
+    this.nightsRented = nights;
+  }
 }
