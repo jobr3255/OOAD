@@ -26,3 +26,15 @@ Chloe/Josh Brown
 - Observer
 - Singleton
 - Decorator
+
+##### Factory
+The Factory Pattern is implemented by the CarFactory class
+
+##### Observer
+The Observer Pattern is implemented by the Day class as the subject, and the Customer class as the Observer
+
+##### Singleton
+The Singleton Pattern is implemented by the Simulator class
+
+##### Decorator
+The Decorator Pattern is implemented by the Option decorator class decorating the Rental class

@@ -8,7 +8,7 @@ import project3.rental.option.*;
 import project3.customer.Customer;
 
 /**
- *
+ *	RentalRecord is a helper for the customer to rent and return cars from the store
  */
 public class RentalRecord {
 
@@ -119,7 +119,6 @@ public class RentalRecord {
 
 	private String activeRentalString() {
     String formatted = "Renter: " + this.customer.toString();
-    // formatted += ", Nights rented: " + this.nightsRented;
     if(this.status == RentalStatus.ACTIVE)
       formatted += ", Status: ACTIVE";
     else if(this.status == RentalStatus.COMPLETE)
@@ -136,15 +135,4 @@ public class RentalRecord {
     formatted += "\nTotal: $" + this.total();
 		return formatted;
 	}
-
-	// public boolean equals(Object obj) {
-	// 	if (obj != null && getClass() == obj.getClass()) {
-	// 		RentalRecord rr = (RentalRecord)obj;
-	// 		return this.carsRented == rr.carsRented &&
-	// 					 this.dayRented == rr.dayRented &&
-	// 					 this.nightsRented == rr.nightsRented &&
-	// 					 this.cucustomer == rr.cucustomer;
-	// 	}
-	// 	return false;
-	// }
 }

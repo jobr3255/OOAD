@@ -3,7 +3,7 @@ package project3.customer;
 import java.security.SecureRandom;
 
 /**
- *
+ *  Implements the regular customer choises
  */
 public class Regular extends Customer {
 

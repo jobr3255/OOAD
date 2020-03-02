@@ -25,36 +25,20 @@ public class Simulator
 	private CarRentalStore store;
   private List<Customer> customers;
 
+	// Singleton logic
 	public static Simulator getSimulator(){
 		if(simulator == null)
 			simulator = new Simulator();
 		return simulator;
 	}
 
-	public Day getDay(){
-		return this.today;
+	private Simulator() {
+		this.today = new Day();
 	}
 
-	public void setNumDays(int numDays){
-		this.daysToSimulate = numDays;
-	}
-
-	public CarRentalStore getStore(){
-		return this.store;
-	}
-
-	public void setStore(CarRentalStore store){
-		this.store = store;
-	}
-
-	public CarRentalStore getCustomers(){
-		return this.store;
-	}
-
-	public void setCustomers(List<Customer> customers){
-		this.customers = customers;
-	}
-
+	/**
+	 *  Runs the simulator for daysToSimulate
+	 */
 	public void run(){
 			for(int i = 1; i <= this.daysToSimulate; i++){
 				System.out.println("*****************");
@@ -69,7 +53,10 @@ public class Simulator
 			printEndInfo();
 	}
 
-	public void runDay(){
+	/**
+	 *  Simulates a day
+	 */
+	private void runDay(){
 		List<Customer> todaysCustomers = new ArrayList<Customer>();
 		// 2 - 10 customers can visit the store each day
 		int maxNumCustomers = (new SecureRandom()).nextInt(8) + 2;
@@ -150,8 +137,12 @@ public class Simulator
 		return rentalRecord;
 	}
 
+	/**
+	 *  Add options to rental
+	 *  @param Rental
+	 *  	Rental car to add options to
+	 */
 	public void chooseOptions(Rental rentalCar){
-		List<Option> options = new ArrayList<Option>();
 		// Decide to add GPS option or not
 		if((new SecureRandom()).nextInt(100) > 50){
 			rentalCar = new GPS(rentalCar);
@@ -211,10 +202,9 @@ public class Simulator
 		}
 	}
 
-	private Simulator() {
-		this.today = new Day();
-	}
-
+	/**
+	 *  Prints the information from a simulated day
+	 */
 	private void printDayInfo(){
 		int totalMadeToday = 0;
 		int numCompleted = 0;
@@ -237,7 +227,7 @@ public class Simulator
 		}
 
 		System.out.println("-----------------");
-		System.out.println("Completed rentals: " + numCompleted);
+		System.out.println("Day " + today.today() + " completed rentals: " + numCompleted);
 		System.out.println("-----------------");
 		for(RentalRecord rr : completedRentals){
 			System.out.println(rr.toString());
@@ -245,7 +235,7 @@ public class Simulator
 		}
 
 		System.out.println("-----------------");
-		System.out.println("Active rentals: " + numActive);
+		System.out.println("Day " + today.today() + " active rentals: " + numActive);
 		System.out.println("-----------------");
 		for(RentalRecord rr : activeRentals){
 			System.out.println(rr.toString());
@@ -257,6 +247,9 @@ public class Simulator
 		System.out.println("Total money store made on day " + this.today.today() + ": $" + totalMadeToday);
 	}
 
+	/**
+	 *  Prints the information for the end of the simulation
+	 */
 	private void printEndInfo(){
 		System.out.println("*****************");
 		System.out.println("Simulation completed");
@@ -287,5 +280,29 @@ public class Simulator
 		System.out.println("  # rented by Regular customers:  " + numRegular);
 		System.out.println("  # rented by Business customers:  " + numBusiness);
 		System.out.println("Total money the store made: $" + totalMade);
+	}
+
+	public Day getDay(){
+		return this.today;
+	}
+
+	public void setNumDays(int numDays){
+		this.daysToSimulate = numDays;
+	}
+
+	public CarRentalStore getStore(){
+		return this.store;
+	}
+
+	public void setStore(CarRentalStore store){
+		this.store = store;
+	}
+
+	public CarRentalStore getCustomers(){
+		return this.store;
+	}
+
+	public void setCustomers(List<Customer> customers){
+		this.customers = customers;
 	}
 }

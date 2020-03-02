@@ -3,7 +3,7 @@ import project3.rental.car.Car;
 import project3.rental.Rental;
 
 /**
- *
+ *	Implements GPS option logic
  */
 public class GPS extends Option {
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ *	Abstract Car class
  */
 public abstract class Car extends Rental {
 	protected String licensePlate;
@@ -34,6 +34,9 @@ public abstract class Car extends Rental {
 		return getCategory() + "[" + licensePlate + "]";
 	}
 
+	/**
+	 *  Defines that equal Car objects have the same subclass and same licensePlate
+	 */
 	public boolean equals(Object obj) {
 		if (obj != null && getClass() == obj.getClass()) {
 			Car c = (Car)obj;

@@ -3,7 +3,7 @@ package project3;
 import project3.observer.Subject;
 
 /**
- *
+ *	Implements the Subject part of the Observer Pattern
  */
 public class Day extends Subject {
 
@@ -23,8 +23,8 @@ public class Day extends Subject {
 	}
 
   /**
-   *  @return int
-   *  Returns integer representing the current day
+   *  @return
+   *  The current day
    */
 	public int today(){
 		return this.currentDay;

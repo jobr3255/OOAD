@@ -1,0 +1,1683 @@
+*****************
+    Day 1
+*****************
+-----------------
+Day 1 completed rentals: 0
+-----------------
+-----------------
+Day 1 active rentals: 7
+-----------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Luxury[ICN613]
+  Standard[AKL802]
+---------------------------------------------------
+Renter: Vicente (Business), Status: ACTIVE
+Rented: (7 nights)
+  Economy[XGS424]
+  Luxury[QKQ461]
+  SUV[MDP045]
+---------------------------------------------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (4 nights)
+  SUV[LOL668]
+  Economy[GZC550]
+---------------------------------------------------
+-----------------
+Cars left in store: 17
+Total money store made on day 1: $2580
+*****************
+    Day 2
+*****************
+-----------------
+Day 2 completed rentals: 0
+-----------------
+-----------------
+Day 2 active rentals: 13
+-----------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[JDG732]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Minivan[EYH288]
+---------------------------------------------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[BXC884]
+---------------------------------------------------
+Renter: Kristal (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[BIA317]
+  Standard[NYI410]
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[KVV221]
+---------------------------------------------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (4 nights)
+  SUV[JBI456]
+  Standard[LFT557]
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[PIQ851]
+---------------------------------------------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[OIV882]
+  Minivan[PNJ275]
+---------------------------------------------------
+-----------------
+Cars left in store: 4
+Total money store made on day 2: $3070
+*****************
+    Day 3
+*****************
+-----------------
+Day 3 completed rentals: 0
+-----------------
+-----------------
+Day 3 active rentals: 4
+-----------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[WUZ662]
+---------------------------------------------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[IUH762]
+---------------------------------------------------
+Renter: Ann (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[NVZ604]
+  SUV[MZL075]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 3: $790
+*****************
+    Day 4
+*****************
+-----------------
+Day 4 completed rentals: 2
+-----------------
+Renter: Claud (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Minivan[EYH288]
+Total: $120
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[BXC884]
+Total: $80
+---------------------------------------------------
+-----------------
+Day 4 active rentals: 2
+-----------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[BXC884]
+  Minivan[EYH288]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 4: $500
+*****************
+    Day 5
+*****************
+-----------------
+Day 5 completed rentals: 4
+-----------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Luxury[ICN613]
+  Standard[AKL802]
+Total: $560
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (4 nights)
+  SUV[LOL668]
+  Economy[GZC550]
+Total: $480
+---------------------------------------------------
+-----------------
+Day 5 active rentals: 4
+-----------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Luxury[ICN613]
+  Economy[GZC550]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Standard[AKL802]
+---------------------------------------------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (1 nights)
+  SUV[LOL668]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 5: $1750
+*****************
+    Day 6
+*****************
+-----------------
+Day 6 completed rentals: 11
+-----------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[JDG732]
+Total: $160
+---------------------------------------------------
+Renter: Christian (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[KVV221]
+Total: $240
+---------------------------------------------------
+Renter: Arline (Regular), Status: COMPLETE
+Rented: (4 nights)
+  SUV[JBI456]
+  Standard[LFT557]
+Total: $440
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[PIQ851]
+Total: $240
+---------------------------------------------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[XIT404]
+Total: $160
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Economy[OIV882]
+  Minivan[PNJ275]
+Total: $440
+---------------------------------------------------
+Renter: Arline (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[IUH762]
+Total: $150
+---------------------------------------------------
+Renter: Claud (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Standard[AKL802]
+Total: $40
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (1 nights)
+  SUV[LOL668]
+Total: $70
+---------------------------------------------------
+-----------------
+Day 6 active rentals: 8
+-----------------
+Renter: Oliva (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[LOL668]
+  Standard[LFT557]
+  Economy[OIV882]
+---------------------------------------------------
+Renter: Meg (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[IUH762]
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Minivan[PNJ275]
+---------------------------------------------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[KVV221]
+  Standard[JDG732]
+---------------------------------------------------
+-----------------
+Cars left in store: 3
+Total money store made on day 6: $3860
+*****************
+    Day 7
+*****************
+-----------------
+Day 7 completed rentals: 6
+-----------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Economy[WUZ662]
+Total: $200
+---------------------------------------------------
+Renter: Ann (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[NVZ604]
+  SUV[MZL075]
+Total: $440
+---------------------------------------------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[BXC884]
+  Minivan[EYH288]
+Total: $300
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Minivan[PNJ275]
+Total: $60
+---------------------------------------------------
+-----------------
+Day 7 active rentals: 3
+-----------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[MZL075]
+---------------------------------------------------
+Renter: Janice (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Minivan[PIQ851]
+---------------------------------------------------
+-----------------
+Cars left in store: 6
+Total money store made on day 7: $1510
+*****************
+    Day 8
+*****************
+-----------------
+Day 8 completed rentals: 4
+-----------------
+Renter: Vicente (Business), Status: COMPLETE
+Rented: (7 nights)
+  Economy[XGS424]
+  Luxury[QKQ461]
+  SUV[MDP045]
+Total: $1540
+---------------------------------------------------
+Renter: Meg (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[JBI456]
+Total: $140
+---------------------------------------------------
+-----------------
+Day 8 active rentals: 10
+-----------------
+Renter: Meg (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Economy[WUZ662]
+---------------------------------------------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Janice (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[AKL802]
+---------------------------------------------------
+Renter: Jama (Business), Status: ACTIVE
+Rented: (7 nights)
+  Minivan[PNJ275]
+  Minivan[EYH288]
+  Standard[NVZ604]
+---------------------------------------------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[MDP045]
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Luxury[QKQ461]
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[BXC884]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 8: $3860
+*****************
+    Day 9
+*****************
+-----------------
+Day 9 completed rentals: 7
+-----------------
+Renter: Kristal (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[BIA317]
+  Standard[NYI410]
+  Minivan[SJF217]
+Total: $1190
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Luxury[ICN613]
+  Economy[GZC550]
+Total: $600
+---------------------------------------------------
+Renter: Meg (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Economy[WUZ662]
+Total: $50
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Economy[XGS424]
+Total: $50
+---------------------------------------------------
+-----------------
+Day 9 active rentals: 7
+-----------------
+Renter: Lavon (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Beulah (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[NYI410]
+---------------------------------------------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Economy[GZC550]
+---------------------------------------------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Luxury[ICN613]
+  Economy[WUZ662]
+---------------------------------------------------
+Renter: Bradly (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[BIA317]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 9: $2950
+*****************
+    Day 10
+*****************
+-----------------
+Day 10 completed rentals: 7
+-----------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Economy[IUH762]
+Total: $200
+---------------------------------------------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[KVV221]
+  Standard[JDG732]
+Total: $400
+---------------------------------------------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[XIT404]
+Total: $120
+---------------------------------------------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[MZL075]
+Total: $210
+---------------------------------------------------
+Renter: Janice (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Minivan[PIQ851]
+Total: $180
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[BXC884]
+Total: $80
+---------------------------------------------------
+-----------------
+Day 10 active rentals: 7
+-----------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Minivan[KVV221]
+  SUV[MZL075]
+---------------------------------------------------
+Renter: Janice (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[PIQ851]
+---------------------------------------------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[IUH762]
+---------------------------------------------------
+Renter: Darren (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[JDG732]
+  Standard[BXC884]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 10: $2300
+*****************
+    Day 11
+*****************
+-----------------
+Day 11 completed rentals: 8
+-----------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[MDP045]
+  SUV[JBI456]
+Total: $420
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Luxury[QKQ461]
+Total: $300
+---------------------------------------------------
+Renter: Lavon (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Economy[XGS424]
+Total: $100
+---------------------------------------------------
+Renter: Beulah (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[NYI410]
+Total: $80
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Economy[GZC550]
+Total: $100
+---------------------------------------------------
+Renter: Bradly (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Minivan[SJF217]
+Total: $120
+---------------------------------------------------
+Renter: Darren (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Standard[XIT404]
+Total: $40
+---------------------------------------------------
+-----------------
+Day 11 active rentals: 8
+-----------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Luxury[QKQ461]
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Shirlene (Business), Status: ACTIVE
+Rented: (7 nights)
+  Economy[GZC550]
+  Standard[XIT404]
+  SUV[MDP045]
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[NYI410]
+---------------------------------------------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[JBI456]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 11: $3380
+*****************
+    Day 12
+*****************
+-----------------
+Day 12 completed rentals: 4
+-----------------
+Renter: Janice (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[AKL802]
+Total: $160
+---------------------------------------------------
+Renter: Arline (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Luxury[ICN613]
+  Economy[WUZ662]
+Total: $450
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[BIA317]
+Total: $210
+---------------------------------------------------
+-----------------
+Day 12 active rentals: 4
+-----------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[BIA317]
+---------------------------------------------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Economy[WUZ662]
+---------------------------------------------------
+Renter: Darren (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[AKL802]
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Luxury[ICN613]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 12: $1410
+*****************
+    Day 13
+*****************
+-----------------
+Day 13 completed rentals: 8
+-----------------
+Renter: Oliva (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[LOL668]
+  Standard[LFT557]
+  Economy[OIV882]
+Total: $1120
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Minivan[KVV221]
+  SUV[MZL075]
+Total: $390
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[JDG732]
+  Standard[BXC884]
+Total: $240
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[JBI456]
+Total: $140
+---------------------------------------------------
+-----------------
+Day 13 active rentals: 8
+-----------------
+Renter: Kristal (Business), Status: ACTIVE
+Rented: (7 nights)
+  Standard[JDG732]
+  SUV[MZL075]
+  Minivan[KVV221]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[BXC884]
+---------------------------------------------------
+Renter: Lavon (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[LOL668]
+---------------------------------------------------
+Renter: Darren (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Economy[OIV882]
+---------------------------------------------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (1 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Bradly (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Standard[LFT557]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 13: $3460
+*****************
+    Day 14
+*****************
+-----------------
+Day 14 completed rentals: 9
+-----------------
+Renter: Janice (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[PIQ851]
+Total: $240
+---------------------------------------------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Economy[IUH762]
+Total: $200
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[NYI410]
+Total: $120
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Economy[WUZ662]
+Total: $100
+---------------------------------------------------
+Renter: Darren (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[AKL802]
+Total: $80
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Luxury[ICN613]
+Total: $200
+---------------------------------------------------
+Renter: Darren (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Economy[OIV882]
+Total: $50
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (1 nights)
+  SUV[JBI456]
+Total: $70
+---------------------------------------------------
+Renter: Bradly (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Standard[LFT557]
+Total: $40
+---------------------------------------------------
+-----------------
+Day 14 active rentals: 2
+-----------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[IUH762]
+---------------------------------------------------
+Renter: Bradly (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Economy[WUZ662]
+---------------------------------------------------
+-----------------
+Cars left in store: 7
+Total money store made on day 14: $1350
+*****************
+    Day 15
+*****************
+-----------------
+Day 15 completed rentals: 9
+-----------------
+Renter: Jama (Business), Status: COMPLETE
+Rented: (7 nights)
+  Minivan[PNJ275]
+  Minivan[EYH288]
+  Standard[NVZ604]
+Total: $1120
+---------------------------------------------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Economy[XGS424]
+Total: $200
+---------------------------------------------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Luxury[QKQ461]
+  Minivan[SJF217]
+Total: $640
+---------------------------------------------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[BIA317]
+Total: $210
+---------------------------------------------------
+Renter: Claud (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[BXC884]
+Total: $80
+---------------------------------------------------
+Renter: Lavon (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[LOL668]
+Total: $140
+---------------------------------------------------
+-----------------
+Day 15 active rentals: 6
+-----------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (1 nights)
+  SUV[BIA317]
+---------------------------------------------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Minivan[SJF217]
+  Luxury[QKQ461]
+---------------------------------------------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[OIV882]
+---------------------------------------------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[PIQ851]
+  Standard[BXC884]
+---------------------------------------------------
+-----------------
+Cars left in store: 10
+Total money store made on day 15: $3490
+*****************
+    Day 16
+*****************
+-----------------
+Day 16 completed rentals: 2
+-----------------
+Renter: Bradly (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Economy[WUZ662]
+Total: $100
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (1 nights)
+  SUV[BIA317]
+Total: $70
+---------------------------------------------------
+-----------------
+Day 16 active rentals: 10
+-----------------
+Renter: Oralee (Business), Status: ACTIVE
+Rented: (7 nights)
+  Minivan[EYH288]
+  Economy[WUZ662]
+  Standard[AKL802]
+---------------------------------------------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (4 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Jama (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[BIA317]
+  Luxury[ICN613]
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Humberto (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[LOL668]
+  Minivan[PNJ275]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[NVZ604]
+---------------------------------------------------
+-----------------
+Cars left in store: 2
+Total money store made on day 16: $3510
+*****************
+    Day 17
+*****************
+-----------------
+Day 17 completed rentals: 1
+-----------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[IUH762]
+Total: $150
+---------------------------------------------------
+-----------------
+Day 17 active rentals: 3
+-----------------
+Renter: Greg (Business), Status: ACTIVE
+Rented: (7 nights)
+  Standard[LFT557]
+  Economy[IUH762]
+  Standard[NYI410]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 17: $1060
+*****************
+    Day 18
+*****************
+-----------------
+Day 18 completed rentals: 7
+-----------------
+Renter: Shirlene (Business), Status: COMPLETE
+Rented: (7 nights)
+  Economy[GZC550]
+  Standard[XIT404]
+  SUV[MDP045]
+Total: $1120
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Minivan[SJF217]
+  Luxury[QKQ461]
+Total: $480
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[OIV882]
+Total: $150
+---------------------------------------------------
+Renter: Claud (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[NVZ604]
+Total: $80
+---------------------------------------------------
+-----------------
+Day 18 active rentals: 6
+-----------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[NVZ604]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Luxury[QKQ461]
+  SUV[MDP045]
+---------------------------------------------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[XIT404]
+  Economy[OIV882]
+---------------------------------------------------
+-----------------
+Cars left in store: 1
+Total money store made on day 18: $3230
+*****************
+    Day 19
+*****************
+-----------------
+Day 19 completed rentals: 4
+-----------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[PIQ851]
+  Standard[BXC884]
+Total: $400
+---------------------------------------------------
+Renter: Humberto (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[LOL668]
+  Minivan[PNJ275]
+Total: $390
+---------------------------------------------------
+-----------------
+Day 19 active rentals: 5
+-----------------
+Renter: Elisabeth (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Minivan[PIQ851]
+---------------------------------------------------
+Renter: Alberto (Regular), Status: ACTIVE
+Rented: (4 nights)
+  SUV[LOL668]
+---------------------------------------------------
+Renter: Shirlene (Business), Status: ACTIVE
+Rented: (7 nights)
+  Economy[GZC550]
+  Standard[BXC884]
+  Minivan[PNJ275]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 19: $2180
+*****************
+    Day 20
+*****************
+-----------------
+Day 20 completed rentals: 5
+-----------------
+Renter: Kristal (Business), Status: COMPLETE
+Rented: (7 nights)
+  Standard[JDG732]
+  SUV[MZL075]
+  Minivan[KVV221]
+Total: $1190
+---------------------------------------------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (4 nights)
+  SUV[JBI456]
+Total: $280
+---------------------------------------------------
+Renter: Elisabeth (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Minivan[PIQ851]
+Total: $60
+---------------------------------------------------
+-----------------
+Day 20 active rentals: 5
+-----------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Oliva (Business), Status: ACTIVE
+Rented: (7 nights)
+  Minivan[PIQ851]
+  Standard[JDG732]
+  SUV[MZL075]
+---------------------------------------------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Minivan[KVV221]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 20: $3110
+*****************
+    Day 21
+*****************
+-----------------
+Day 21 completed rentals: 1
+-----------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[NVZ604]
+Total: $120
+---------------------------------------------------
+-----------------
+Day 21 active rentals: 1
+-----------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[NVZ604]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 21: $240
+*****************
+    Day 22
+*****************
+-----------------
+Day 22 completed rentals: 5
+-----------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Luxury[QKQ461]
+  SUV[MDP045]
+Total: $680
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[SJF217]
+Total: $240
+---------------------------------------------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[XIT404]
+  Economy[OIV882]
+Total: $360
+---------------------------------------------------
+-----------------
+Day 22 active rentals: 2
+-----------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[OIV882]
+---------------------------------------------------
+Renter: Jong (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[XIT404]
+---------------------------------------------------
+-----------------
+Cars left in store: 3
+Total money store made on day 22: $1510
+*****************
+    Day 23
+*****************
+-----------------
+Day 23 completed rentals: 9
+-----------------
+Renter: Oralee (Business), Status: COMPLETE
+Rented: (7 nights)
+  Minivan[EYH288]
+  Economy[WUZ662]
+  Standard[AKL802]
+Total: $1050
+---------------------------------------------------
+Renter: Jama (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[BIA317]
+  Luxury[ICN613]
+  Economy[XGS424]
+Total: $1540
+---------------------------------------------------
+Renter: Alberto (Regular), Status: COMPLETE
+Rented: (4 nights)
+  SUV[LOL668]
+Total: $280
+---------------------------------------------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[JBI456]
+Total: $210
+---------------------------------------------------
+Renter: Christian (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Minivan[KVV221]
+Total: $180
+---------------------------------------------------
+-----------------
+Day 23 active rentals: 6
+-----------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[LOL668]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Luxury[ICN613]
+---------------------------------------------------
+Renter: Bradly (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[MDP045]
+---------------------------------------------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[KVV221]
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[AKL802]
+---------------------------------------------------
+-----------------
+Cars left in store: 6
+Total money store made on day 23: $4480
+*****************
+    Day 24
+*****************
+-----------------
+Day 24 completed rentals: 5
+-----------------
+Renter: Greg (Business), Status: COMPLETE
+Rented: (7 nights)
+  Standard[LFT557]
+  Economy[IUH762]
+  Standard[NYI410]
+Total: $910
+---------------------------------------------------
+Renter: Arline (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[NVZ604]
+Total: $120
+---------------------------------------------------
+Renter: Jong (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[XIT404]
+Total: $80
+---------------------------------------------------
+-----------------
+Day 24 active rentals: 11
+-----------------
+Renter: Vicente (Business), Status: ACTIVE
+Rented: (7 nights)
+  Standard[NYI410]
+  Economy[WUZ662]
+  Standard[NVZ604]
+---------------------------------------------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[LFT557]
+---------------------------------------------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (4 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Bradly (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Meg (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Jama (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[BIA317]
+  Minivan[EYH288]
+  Luxury[QKQ461]
+---------------------------------------------------
+Renter: Ann (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[IUH762]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 24: $4270
+*****************
+    Day 25
+*****************
+-----------------
+Day 25 completed rentals: 4
+-----------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[OIV882]
+Total: $150
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[LOL668]
+Total: $140
+---------------------------------------------------
+Renter: Bradly (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[MDP045]
+Total: $140
+---------------------------------------------------
+Renter: Bradly (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Economy[XGS424]
+Total: $50
+---------------------------------------------------
+-----------------
+Day 25 active rentals: 4
+-----------------
+Renter: Kristal (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[MDP045]
+  SUV[LOL668]
+  Economy[OIV882]
+---------------------------------------------------
+Renter: Octavio (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Economy[XGS424]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 25: $1910
+*****************
+    Day 26
+*****************
+-----------------
+Day 26 completed rentals: 6
+-----------------
+Renter: Shirlene (Business), Status: COMPLETE
+Rented: (7 nights)
+  Economy[GZC550]
+  Standard[BXC884]
+  Minivan[PNJ275]
+Total: $1050
+---------------------------------------------------
+Renter: Ross (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Luxury[ICN613]
+Total: $300
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[LFT557]
+Total: $80
+---------------------------------------------------
+Renter: Meg (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[XIT404]
+Total: $80
+---------------------------------------------------
+-----------------
+Day 26 active rentals: 6
+-----------------
+Renter: Willa (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[BXC884]
+---------------------------------------------------
+Renter: Shirlene (Business), Status: ACTIVE
+Rented: (7 nights)
+  Minivan[PNJ275]
+  Economy[GZC550]
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Alberto (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[LFT557]
+---------------------------------------------------
+Renter: Darren (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Luxury[ICN613]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 26: $3000
+*****************
+    Day 27
+*****************
+-----------------
+Day 27 completed rentals: 8
+-----------------
+Renter: Oliva (Business), Status: COMPLETE
+Rented: (7 nights)
+  Minivan[PIQ851]
+  Standard[JDG732]
+  SUV[MZL075]
+Total: $1190
+---------------------------------------------------
+Renter: Christian (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[SJF217]
+Total: $240
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Minivan[KVV221]
+Total: $240
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[AKL802]
+Total: $160
+---------------------------------------------------
+Renter: Ann (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[IUH762]
+Total: $150
+---------------------------------------------------
+Renter: Octavio (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Economy[XGS424]
+Total: $100
+---------------------------------------------------
+-----------------
+Day 27 active rentals: 8
+-----------------
+Renter: Piedad (Business), Status: ACTIVE
+Rented: (7 nights)
+  Economy[XGS424]
+  Standard[AKL802]
+  Economy[IUH762]
+---------------------------------------------------
+Renter: Greg (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[MZL075]
+  Minivan[KVV221]
+  Minivan[PIQ851]
+---------------------------------------------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Minivan[SJF217]
+---------------------------------------------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[JDG732]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 27: $4730
+*****************
+    Day 28
+*****************
+-----------------
+Day 28 completed rentals: 3
+-----------------
+Renter: Christian (Regular), Status: COMPLETE
+Rented: (4 nights)
+  SUV[JBI456]
+Total: $280
+---------------------------------------------------
+Renter: Willa (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Standard[BXC884]
+Total: $80
+---------------------------------------------------
+Renter: Darren (Casual), Status: COMPLETE
+Rented: (2 nights)
+  Luxury[ICN613]
+Total: $200
+---------------------------------------------------
+-----------------
+Day 28 active rentals: 3
+-----------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Luxury[ICN613]
+---------------------------------------------------
+Renter: Beulah (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[JBI456]
+---------------------------------------------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[BXC884]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 28: $1160
+*****************
+    Day 29
+*****************
+-----------------
+Day 29 completed rentals: 0
+-----------------
+-----------------
+Day 29 active rentals: 0
+-----------------
+-----------------
+Cars left in store: 0
+Total money store made on day 29: $0
+*****************
+    Day 30
+*****************
+-----------------
+Day 30 completed rentals: 3
+-----------------
+Renter: Alberto (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[LFT557]
+Total: $160
+---------------------------------------------------
+Renter: Katelynn (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Minivan[SJF217]
+Total: $180
+---------------------------------------------------
+Renter: Beulah (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[JBI456]
+Total: $140
+---------------------------------------------------
+-----------------
+Day 30 active rentals: 3
+-----------------
+Renter: Oliva (Business), Status: ACTIVE
+Rented: (7 nights)
+  SUV[JBI456]
+  Minivan[SJF217]
+  Standard[LFT557]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 30: $1670
+*****************
+    Day 31
+*****************
+-----------------
+Day 31 completed rentals: 8
+-----------------
+Renter: Vicente (Business), Status: COMPLETE
+Rented: (7 nights)
+  Standard[NYI410]
+  Economy[WUZ662]
+  Standard[NVZ604]
+Total: $910
+---------------------------------------------------
+Renter: Jama (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[BIA317]
+  Minivan[EYH288]
+  Luxury[QKQ461]
+Total: $1610
+---------------------------------------------------
+Renter: Arline (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[JDG732]
+Total: $160
+---------------------------------------------------
+Renter: Christian (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Luxury[ICN613]
+Total: $300
+---------------------------------------------------
+-----------------
+Day 31 active rentals: 7
+-----------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Standard[NYI410]
+  Luxury[ICN613]
+---------------------------------------------------
+Renter: Cedrick (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[JDG732]
+  Luxury[QKQ461]
+---------------------------------------------------
+Renter: Beulah (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Minivan[EYH288]
+---------------------------------------------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[WUZ662]
+  Standard[NVZ604]
+---------------------------------------------------
+-----------------
+Cars left in store: 1
+Total money store made on day 31: $4290
+*****************
+    Day 32
+*****************
+-----------------
+Day 32 completed rentals: 5
+-----------------
+Renter: Kristal (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[MDP045]
+  SUV[LOL668]
+  Economy[OIV882]
+Total: $1330
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[BXC884]
+Total: $160
+---------------------------------------------------
+Renter: Beulah (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Minivan[EYH288]
+Total: $60
+---------------------------------------------------
+-----------------
+Day 32 active rentals: 6
+-----------------
+Renter: Silvia (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[MDP045]
+  Minivan[EYH288]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[BIA317]
+---------------------------------------------------
+Renter: Hassan (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[LOL668]
+---------------------------------------------------
+Renter: Ann (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Economy[OIV882]
+  Standard[BXC884]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 32: $2650
+*****************
+    Day 33
+*****************
+-----------------
+Day 33 completed rentals: 3
+-----------------
+Renter: Shirlene (Business), Status: COMPLETE
+Rented: (7 nights)
+  Minivan[PNJ275]
+  Economy[GZC550]
+  Standard[XIT404]
+Total: $1050
+---------------------------------------------------
+-----------------
+Day 33 active rentals: 3
+-----------------
+Renter: Christian (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[PNJ275]
+  Standard[XIT404]
+---------------------------------------------------
+Renter: Jong (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Economy[GZC550]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 33: $1500
+*****************
+    Day 34
+*****************
+-----------------
+Day 34 completed rentals: 12
+-----------------
+Renter: Piedad (Business), Status: COMPLETE
+Rented: (7 nights)
+  Economy[XGS424]
+  Standard[AKL802]
+  Economy[IUH762]
+Total: $980
+---------------------------------------------------
+Renter: Greg (Business), Status: COMPLETE
+Rented: (7 nights)
+  SUV[MZL075]
+  Minivan[KVV221]
+  Minivan[PIQ851]
+Total: $1330
+---------------------------------------------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Standard[NYI410]
+  Luxury[ICN613]
+Total: $420
+---------------------------------------------------
+Renter: Marjory (Regular), Status: COMPLETE
+Rented: (3 nights)
+  Economy[WUZ662]
+  Standard[NVZ604]
+Total: $270
+---------------------------------------------------
+Renter: Claud (Casual), Status: COMPLETE
+Rented: (2 nights)
+  SUV[BIA317]
+Total: $140
+---------------------------------------------------
+Renter: Jong (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Economy[GZC550]
+Total: $50
+---------------------------------------------------
+-----------------
+Day 34 active rentals: 12
+-----------------
+Renter: Piedad (Business), Status: ACTIVE
+Rented: (7 nights)
+  Standard[AKL802]
+  Economy[WUZ662]
+  Economy[XGS424]
+---------------------------------------------------
+Renter: Darren (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Standard[NYI410]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (3 nights)
+  SUV[MZL075]
+  Economy[GZC550]
+---------------------------------------------------
+Renter: Claud (Casual), Status: ACTIVE
+Rented: (2 nights)
+  Minivan[PIQ851]
+---------------------------------------------------
+Renter: Beulah (Casual), Status: ACTIVE
+Rented: (1 nights)
+  Minivan[KVV221]
+---------------------------------------------------
+Renter: Meg (Casual), Status: ACTIVE
+Rented: (2 nights)
+  SUV[BIA317]
+---------------------------------------------------
+Renter: Arline (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Economy[IUH762]
+  Standard[NVZ604]
+---------------------------------------------------
+Renter: Marjory (Regular), Status: ACTIVE
+Rented: (3 nights)
+  Luxury[ICN613]
+---------------------------------------------------
+-----------------
+Cars left in store: 0
+Total money store made on day 34: $5500
+*****************
+    Day 35
+*****************
+-----------------
+Day 35 completed rentals: 6
+-----------------
+Renter: Cedrick (Regular), Status: COMPLETE
+Rented: (4 nights)
+  Standard[JDG732]
+  Luxury[QKQ461]
+Total: $560
+---------------------------------------------------
+Renter: Silvia (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[MDP045]
+  Minivan[EYH288]
+Total: $390
+---------------------------------------------------
+Renter: Hassan (Regular), Status: COMPLETE
+Rented: (3 nights)
+  SUV[LOL668]
+Total: $210
+---------------------------------------------------
+Renter: Beulah (Casual), Status: COMPLETE
+Rented: (1 nights)
+  Minivan[KVV221]
+Total: $60
+---------------------------------------------------
+-----------------
+Day 35 active rentals: 5
+-----------------
+Renter: Katelynn (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Minivan[EYH288]
+---------------------------------------------------
+Renter: Kristal (Business), Status: ACTIVE
+Rented: (7 nights)
+  Luxury[QKQ461]
+  SUV[MDP045]
+  SUV[LOL668]
+---------------------------------------------------
+Renter: Ross (Regular), Status: ACTIVE
+Rented: (4 nights)
+  Standard[JDG732]
+---------------------------------------------------
+-----------------
+Cars left in store: 1
+Total money store made on day 35: $3300
+*****************
+Simulation completed
+  Simulated 35 days.
+*****************
+Total completed rentals: 120
+  # rented by Casual customers:  41
+  # rented by Regular customers:  62
+  # rented by Business customers:  17
+Total money the store made: $47920

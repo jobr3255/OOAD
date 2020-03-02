@@ -17,11 +17,6 @@ import java.util.Enumeration;
  */
 public class TestRunner {
 	public static void main(String[] args) {
-		runAllTests();
-		// runSelectedTests();
-	}
-
-	private static void runAllTests() {
 		Result result = JUnitCore.runClasses(MyUnitTest.class);
 
 		if(result.wasSuccessful()) {
@@ -33,31 +28,6 @@ public class TestRunner {
 				failedTest = failedTest.substring(0, failedTest.indexOf("("));
 				System.out.println("Failed test: " + failedTest);
 				System.out.println(failure.getMessage());
-				System.out.println("");
-			}
-			System.out.println("===========================================\n");
-		}
-	}
-
-	private static void runSelectedTests() {
-		TestSuite suite= new TestSuite();
-		suite.addTest(new MyUnitTest("testUniqueLicensePlates"));
-		suite.addTest(new MyUnitTest("testMyTestTwo"));
-
-		TestResult result = new TestResult();
-		suite.run(result);
-
-		if(result.wasSuccessful()) {
-			printSuccess(result.runCount());
-		}else{
-			printFailures(result.failureCount(), result.runCount());
-			Enumeration<TestFailure> e = result.failures();
-			while (e.hasMoreElements()) {
-				TestFailure failure = e.nextElement();
-				String failedTest = failure.toString();
-				failedTest = failedTest.substring(0, failedTest.indexOf("("));
-				System.out.println("Failed test: " + failedTest);
-				System.out.println(failure.exceptionMessage());
 				System.out.println("");
 			}
 			System.out.println("===========================================\n");

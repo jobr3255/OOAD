@@ -3,7 +3,7 @@ package project3.customer;
 import java.security.SecureRandom;
 
 /**
- *
+ *  Implements the casual customer choises
  */
 public class Casual extends Customer {
 

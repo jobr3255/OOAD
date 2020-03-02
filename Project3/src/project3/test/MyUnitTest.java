@@ -35,6 +35,9 @@ public class MyUnitTest extends TestCase {
 		super(fname);
 	}
 
+  /**
+   *  Tests if car factory successfully makes unique license plates
+   */
 	@Test
 	public void testUniqueLicensePlates() {
     before();
@@ -55,6 +58,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the default store meets the requirements of 24 cars and at least 2 of each car
+   */
 	@Test
 	public void testCarCatalog() {
     before();
@@ -90,6 +96,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the store inventory correctly changes when a cutomer rental transaction is simulated
+   */
 	@Test
 	public void testInventoryChange() {
     before();
@@ -109,6 +118,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the customer now has the car after renting it
+   */
 	@Test
 	public void testCustomerRental() {
     before();
@@ -128,6 +140,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the store ledger was updated upon a customer renting cars
+   */
 	@Test
 	public void testStoreLedger() {
     before();
@@ -147,6 +162,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if cars are returned to the store when a RentalRecord is completed
+   */
 	@Test
 	public void testRentalRecordComplete() {
     before();
@@ -173,6 +191,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the customer correctly observes the Day object and returns their rentals on time
+   */
 	@Test
 	public void testCustomerReturn() {
     before();
@@ -207,6 +228,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the simulator restricts customers to 3 rentals at one time
+   */
 	@Test
 	public void testCustomerRentalLimit() {
     before();
@@ -232,6 +256,9 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests that Business customers rent 3 cars for 7 nights
+   */
 	@Test
 	public void testBusinessCustomerBehavior() {
     before();
@@ -254,6 +281,10 @@ public class MyUnitTest extends TestCase {
     passed();
 	}
 
+  /**
+   *  Tests if the integrity of the RentalRecord remains intact when cars are returned to the store
+   *  This test is needed because the options were getting reset when the car was returned to the store
+   */
 	@Test
 	public void testRentalRecordIntegrity() {
     before();

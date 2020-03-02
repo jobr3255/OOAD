@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- *
+ *  Implements the Factory Pattern for the CarRentalStore
  */
 public class CarFactory {
 
@@ -18,6 +18,12 @@ public class CarFactory {
     this.licensePlates = new ArrayList<String>();
   }
 
+	/**
+	 *  @param Category category
+	 *     Category new car should be
+	 *  @return
+	 *     Returns new Car with a unique license plate given a category
+	 */
   public Car createCar(Category category){
     String licensePlate = createNewLicensePlate();
     switch (category) {
@@ -30,19 +36,37 @@ public class CarFactory {
     return null;
   }
 
-  public boolean isUniquePlate(String plate){
+  /**
+   *  @param String plate
+   *     License plate to check for uniquness
+   *  @return
+   *     True if plate is unique, false otherwise
+   */
+  public boolean isUniquePlate(String licensePlate){
     for (String license : this.licensePlates) {
-			if(plate.equals(license)){
+			if(licensePlate.equals(license)){
         return false;
       }
 		}
     return true;
   }
 
+  /**
+   *  Adds a license plate to the list of license plates
+   *
+   *  @param String licensePlate
+   *     License plate string to add to list
+   */
   public void addLicensePlate(String licensePlate){
     this.licensePlates.add(licensePlate);
   }
 
+  /**
+   *  Creates a new unique license plate
+   *
+   *  @return
+   *     License plate string
+   */
   private String createNewLicensePlate(){
     String licensePlate = "";
     for(int i = 0; i < 3; i++){

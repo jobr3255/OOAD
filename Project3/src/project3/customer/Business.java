@@ -1,7 +1,7 @@
 package project3.customer;
 
 /**
- *
+ *  Implements the business customer choises
  */
 public class Business extends Customer {
 

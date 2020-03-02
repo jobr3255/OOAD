@@ -9,7 +9,7 @@ import project3.rental.car.*;
 import project3.rental.option.Option;
 
 /**
- *
+ *  Keeps track of inventory and a ledger of all rental transactions
  */
 public class CarRentalStore {
 
@@ -23,6 +23,11 @@ public class CarRentalStore {
     this.ledger = new ArrayList<RentalRecord>();
   }
 
+
+  /**
+   *  @return
+   *  The stores inventory
+   */
   public List<Car> inventory(){
     return this.inventory;
   }
@@ -69,25 +74,44 @@ public class CarRentalStore {
   }
 
 	/**
-	 *  Returns a random car in the inventory
+	 *  @return
+   *    A random car in the inventory
 	 */
   public Car getRandomCar(){
     int carIndex = (new SecureRandom()).nextInt(this.inventory.size());
     return this.inventory.get(carIndex);
   }
 
+  /**
+   *  @return
+   *    List of all RentalRecords
+   */
   public List<RentalRecord> ledger(){
     return this.ledger;
   }
 
+  /**
+   *  @return
+   *    List of all active RentalRecords
+   */
   public List<RentalRecord> activeRentals(){
     return filterRecords(RentalRecord.RentalStatus.ACTIVE);
   }
 
+  /**
+   *  @return
+   *    List of all completed RentalRecords
+   */
   public List<RentalRecord> completedRentals(){
     return filterRecords(RentalRecord.RentalStatus.COMPLETE);
   }
 
+  /**
+   *  @param RentalRecord.RentalStatus
+   *    Status to filter
+   *  @return
+   *    Filters the ledger based on rental status
+   */
   private List<RentalRecord> filterRecords(RentalRecord.RentalStatus status){
     List<RentalRecord> rentals = new ArrayList<RentalRecord>();
     for(RentalRecord rr : this.ledger){

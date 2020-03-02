@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- *
+ *  abstract Subject class for the Observer pattern
  */
 public abstract class Subject {
   private List<Observer> observers;

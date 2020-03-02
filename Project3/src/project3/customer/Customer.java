@@ -41,6 +41,11 @@ abstract public class Customer implements Observer {
 		rr.complete();
 	}
 
+	/**
+	 *  @param int day
+	 *		The day the simulation has turned to
+	 *  Called when a new day starts in the simulation
+	 */
   public void update(int day){
 		// Adding to separate array prevents the ConcurrentModificationException
 		List<RentalRecord> toReturn = new ArrayList<RentalRecord>();
@@ -50,25 +55,12 @@ abstract public class Customer implements Observer {
       }
     }
 		for(RentalRecord rr : toReturn){
-			// System.out.println(name + " needs to return " + rr.rentals().toString());
 			returnCars(rr);
 		}
   }
 
 	abstract public int chooseNumRentals();
 	abstract public int chooseNumNights();
-
-	/***************
-	 *  Getters
-	 **************/
-
-	public List<Rental> currentRentals() {
-		return this.rentals;
-	}
-
-	public String name() {
-		return this.name;
-	}
 
 	/**
 	 *  @return String
@@ -80,5 +72,17 @@ abstract public class Customer implements Observer {
 
 	public String toString() {
 		return this.name + " (" + this.type() + ")";
+	}
+
+	/***************
+	 *  Getters
+	 **************/
+
+	public List<Rental> currentRentals() {
+		return this.rentals;
+	}
+
+	public String name() {
+		return this.name;
 	}
 }

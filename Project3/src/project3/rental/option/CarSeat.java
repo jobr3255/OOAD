@@ -3,7 +3,7 @@ import project3.rental.car.Car;
 import project3.rental.Rental;
 
 /**
- *
+ *	Implements CarSeat option logic
  */
 public class CarSeat extends Option {
 

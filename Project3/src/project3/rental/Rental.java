@@ -13,6 +13,7 @@ public abstract class Rental {
   abstract public String description();
 
   protected int nightsRented;
+  // Only need a setter
   public void setNightsRented(int nights){
     this.nightsRented = nights;
   }

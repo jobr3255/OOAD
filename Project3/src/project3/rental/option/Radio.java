@@ -3,7 +3,7 @@ import project3.rental.car.Car;
 import project3.rental.Rental;
 
 /**
- *
+ *	Implements Radio option logic
  */
 public class Radio extends Option {
 
