@@ -8,8 +8,6 @@ import project3.store.CarRentalStore;
  */
 public abstract class Option extends Rental {
 	protected Rental rental;
-	public abstract int rentalPrice();
-	public abstract String description();
 	public Rental rootRental(){
 		if(rental instanceof Option)
 			return ((Option)rental).rootRental();

@@ -37,7 +37,7 @@ public class RentalRecord {
 	 *	Adds car to list of rented cars if the list does not already contain that car
 	 */
   public boolean complete(){
-		if(this.store.ledger().contains(this)){
+		if(this.store.getLedger().contains(this)){
 			this.status = RentalStatus.COMPLETE;
 			// Copy rented cars so the rental record still has the cars with options
 			List<Car> returnCars = new ArrayList<Car>();
@@ -77,7 +77,7 @@ public class RentalRecord {
 	 *  @return int
 	 *  Calculates and returns total cost of the rentals and options
 	 */
-	public int total() {
+	public int getTotal() {
 		int total = 0;
 		for(Rental c : carsRented) {
 			total += c.rentalPrice();
@@ -85,23 +85,23 @@ public class RentalRecord {
 		return total;
 	}
 
-	public RentalStatus status() {
+	public RentalStatus getStatus() {
 		return this.status;
 	}
 
-	public Customer rentedBy() {
+	public Customer getRenter() {
 		return this.customer;
 	}
 
-	public int dayRented() {
+	public int getDayRented() {
 		return this.dayRented;
 	}
 
-	public int nightsRented() {
+	public int getNightsRented() {
 		return this.nightsRented;
 	}
 
-	public List<Rental> rentals() {
+	public List<Rental> getRentals() {
 		return this.carsRented;
 	}
 
@@ -132,7 +132,7 @@ public class RentalRecord {
 
 	private String completedRentalString() {
     String formatted = activeRentalString();
-    formatted += "\nTotal: $" + this.total();
+    formatted += "\nTotal: $" + this.getTotal();
 		return formatted;
 	}
 }

@@ -26,7 +26,7 @@ public class Day extends Subject {
    *  @return
    *  The current day
    */
-	public int today(){
+	public int getToday(){
 		return this.currentDay;
 	}
 }

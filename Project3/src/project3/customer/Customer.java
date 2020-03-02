@@ -26,19 +26,19 @@ abstract public class Customer implements Observer {
 
 	public void rentCars(RentalRecord rr) {
 		this.rentalRecords.add(rr);
-		this.rentals.addAll(rr.rentals());
+		this.rentals.addAll(rr.getRentals());
 	}
 
 	/**
 	 *  @return boolean
 	 *		Returns true if the cars were successfully returned, otherwise returns false
 	 */
-	public void returnCars(RentalRecord rr) {
+	public boolean returnCars(RentalRecord rr) {
 		this.rentalRecords.remove(rr);
-		List<Rental> cars = rr.rentals();
+		List<Rental> cars = rr.getRentals();
 		this.rentals.removeAll(cars);
 		this.rentalRecords.remove(rr);
-		rr.complete();
+		return rr.complete();
 	}
 
 	/**
@@ -50,7 +50,7 @@ abstract public class Customer implements Observer {
 		// Adding to separate array prevents the ConcurrentModificationException
 		List<RentalRecord> toReturn = new ArrayList<RentalRecord>();
     for(RentalRecord rr : this.rentalRecords){
-      if(day == rr.dayRented() + rr.nightsRented()){
+      if(day == rr.getDayRented() + rr.getNightsRented()){
 				toReturn.add(rr);
       }
     }
@@ -66,23 +66,23 @@ abstract public class Customer implements Observer {
 	 *  @return String
 	 *  Returns string of the type of customer
 	 */
-	public String type() {
+	public String getType() {
 		return this.getClass().getSimpleName();
 	}
 
 	public String toString() {
-		return this.name + " (" + this.type() + ")";
+		return this.name + " (" + this.getType() + ")";
 	}
 
 	/***************
 	 *  Getters
 	 **************/
 
-	public List<Rental> currentRentals() {
+	public List<Rental> getRentals() {
 		return this.rentals;
 	}
 
-	public String name() {
+	public String getName() {
 		return this.name;
 	}
 }

@@ -24,7 +24,7 @@ import project3.store.*;
 import project3.*;
 import project3.customer.*;
 /**
- * Unit test for simple App.
+ * Unit test class for project 3
  * Test cases must have the @Test tag and the method name must start with "test"
  */
 public class MyUnitTest extends TestCase {
@@ -72,7 +72,7 @@ public class MyUnitTest extends TestCase {
     sim.setDefaultStore();
 
     CarRentalStore store = sim.getStore();
-    List<Car> inventory = store.inventory();
+    List<Car> inventory = store.getInventory();
     int numCars = inventory.size();
 		System.out.println("Verifying store has 24 cars...");
 		assertEquals("The number of cars in the store's inventory is incorrect.", 24, numCars);
@@ -109,9 +109,9 @@ public class MyUnitTest extends TestCase {
 		Simulator simulator = Simulator.getSimulator();
     simulator.setDefaultStore();
     Customer cust = new Casual("Cool Guy");
-    int initialCount = simulator.getStore().inventory().size();
+    int initialCount = simulator.getStore().getInventory().size();
     simulator.simulateCustomerRental(cust);
-    int newCount = simulator.getStore().inventory().size();
+    int newCount = simulator.getStore().getInventory().size();
 		System.out.println("Verifying store has 1 less car...");
     assertTrue("One car should have been removed from the stores inventory", initialCount == newCount + 1);
 		System.out.println("Success. Inventory changed from " +  initialCount + " to " + newCount);
@@ -132,8 +132,8 @@ public class MyUnitTest extends TestCase {
     simulator.setDefaultStore();
     Customer cust = new Casual("Cool Guy");
     RentalRecord rr = simulator.simulateCustomerRental(cust);
-    List<Rental> rented = rr.rentals();
-    List<Rental> customerCars = cust.currentRentals();
+    List<Rental> rented = rr.getRentals();
+    List<Rental> customerCars = cust.getRentals();
 		System.out.println("Verifying customer has rented car...");
     assertEquals("Customer car does not have a rented car.", rented, customerCars);
 		System.out.println("Success.");
@@ -153,9 +153,9 @@ public class MyUnitTest extends TestCase {
 		Simulator simulator = Simulator.getSimulator();
     simulator.setDefaultStore();
     Customer cust = new Casual("Cool Guy");
-    int initialCount = simulator.getStore().ledger().size();
+    int initialCount = simulator.getStore().getLedger().size();
     RentalRecord rr = simulator.simulateCustomerRental(cust);
-    int newCount = simulator.getStore().ledger().size();
+    int newCount = simulator.getStore().getLedger().size();
 		System.out.println("Verifying ledger was updated...");
     assertEquals("Ledger was not updated.", initialCount + 1, newCount);
 		System.out.println("Success.");
@@ -178,11 +178,11 @@ public class MyUnitTest extends TestCase {
     simulator.setStore(store);
 
     List<Car> initialInventory = new ArrayList<Car>();
-    initialInventory.addAll(simulator.getStore().inventory());
+    initialInventory.addAll(simulator.getStore().getInventory());
     Customer cust = new Casual("Cool Guy");
     RentalRecord rr = simulator.simulateCustomerRental(cust);
     rr.complete();
-    List<Car> storeInventory = simulator.getStore().inventory();
+    List<Car> storeInventory = simulator.getStore().getInventory();
 		System.out.println("Verifying cars were returned...");
     String inventories = initialInventory.toString() + " After: " + storeInventory.toString();
     boolean inventoriesMatch = initialInventory.containsAll(storeInventory) && storeInventory.containsAll(initialInventory);
@@ -207,19 +207,19 @@ public class MyUnitTest extends TestCase {
     simulator.setStore(store);
 
     List<Car> initialInventory = new ArrayList<Car>();
-    initialInventory.addAll(simulator.getStore().inventory());
+    initialInventory.addAll(simulator.getStore().getInventory());
     Customer cust = new Casual("Cool Guy");
     simulator.getDay().addObserver(cust);
     RentalRecord rr = simulator.simulateCustomerRental(cust);
-    int nightsRented = rr.nightsRented();
+    int nightsRented = rr.getNightsRented();
 		System.out.println("Customer needs to return cars on day " + (1 + nightsRented));
 		System.out.println("Advancing days...");
     for(int i=0; i < nightsRented; i++){
       simulator.getDay().nextDay();
-  		System.out.println("Day is now " + simulator.getDay().today());
+  		System.out.println("Day is now " + simulator.getDay().getToday());
     }
 		System.out.println("Verifying customer returned car...");
-    List<Car> storeInventory = simulator.getStore().inventory();
+    List<Car> storeInventory = simulator.getStore().getInventory();
     String inventories = initialInventory.toString() + " After: " + storeInventory.toString();
     boolean inventoriesMatch = initialInventory.containsAll(storeInventory) && storeInventory.containsAll(initialInventory);
     assertTrue("Cars were not returned to the stores inventory. Initial: " + inventories, inventoriesMatch);
@@ -272,11 +272,11 @@ public class MyUnitTest extends TestCase {
     Customer cust = new Business("Cool Business Guy");
     RentalRecord rr = simulator.simulateCustomerRental(cust);
 		System.out.println("Verifying business customer rented 3 cars...");
-    assertEquals("Business customer did not rent 3 cars.", 3, rr.rentals().size());
+    assertEquals("Business customer did not rent 3 cars.", 3, rr.getRentals().size());
 		System.out.println("Success.");
 
 		System.out.println("Verifying business customer rented for 7 nights...");
-    assertEquals("Business customer did not rent for 7 nights.", 7, rr.nightsRented());
+    assertEquals("Business customer did not rent for 7 nights.", 7, rr.getNightsRented());
 		System.out.println("Success.");
     passed();
 	}
@@ -308,12 +308,12 @@ public class MyUnitTest extends TestCase {
     rental1 = new CarSeat(rental1);
     Rental rental2 = simulator.getStore().rentCar(rentalRecord);
     rental2 = new Radio(rental1);
-    int initialTotal = rentalRecord.total();
+    int initialTotal = rentalRecord.getTotal();
     cust.rentCars(rentalRecord);
 		System.out.println(rentalRecord);
     cust.returnCars(rentalRecord);
 		System.out.println(rentalRecord);
-    int afterReturnTotal = rentalRecord.total();
+    int afterReturnTotal = rentalRecord.getTotal();
 		System.out.println("Verifying total...");
     assertEquals("Total is incorrect.", initialTotal, afterReturnTotal);
 		System.out.println("Success.");

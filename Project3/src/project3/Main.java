@@ -4,9 +4,6 @@ package project3;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import project3.rental.car.CarFactory;
-import project3.store.CarRentalStore;
-import project3.customer.*;
 
 /**
  * Main entry point to the application

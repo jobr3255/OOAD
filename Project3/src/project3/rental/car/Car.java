@@ -26,12 +26,8 @@ public abstract class Car extends Rental {
 		return this.getClass().getSimpleName();
 	}
 
-	public String description() {
-		return getCategory() + "[" + licensePlate + "]";
-	}
-
 	public String toString() {
-		return getCategory() + "[" + licensePlate + "]";
+		return this.getCategory() + "[" + licensePlate + "]";
 	}
 
 	/**

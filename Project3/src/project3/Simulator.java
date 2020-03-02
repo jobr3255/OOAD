@@ -42,7 +42,7 @@ public class Simulator
 	public void run(){
 			for(int i = 1; i <= this.daysToSimulate; i++){
 				System.out.println("*****************");
-				System.out.println("    Day " + this.today.today());
+				System.out.println("    Day " + this.today.getToday());
 				System.out.println("*****************");
 				runDay();
 				printDayInfo();
@@ -63,7 +63,7 @@ public class Simulator
 		int availableCars;
 		for(int i = 0; i < maxNumCustomers; i++){
 			Customer c = this.nextCustomer();
-			availableCars = this.store.inventory().size();
+			availableCars = this.store.getInventory().size();
 			// Stop sending customers to the store if there are no more cars available
 			if(availableCars == 0){
 				// Store is out of cars to rent.
@@ -75,14 +75,14 @@ public class Simulator
 					i--;
 					continue;
 				}else{
-					int currentRentals = c.currentRentals().size();
+					int getRentals = c.getRentals().size();
 					// Business customers will always have either 0 or 3 rentals active and always rents 3 cars
-					if(c instanceof Business && currentRentals == MAX_RENTALS){
+					if(c instanceof Business && getRentals == MAX_RENTALS){
 						// Business customer can't visit the store, don't count this iteration
 						i--;
 						continue;
 					}
-					if(currentRentals == MAX_RENTALS){
+					if(getRentals == MAX_RENTALS){
 						// Customer can't rent any more cars, don't count this iteration
 						i--;
 						continue;
@@ -113,7 +113,7 @@ public class Simulator
 	 */
 	public RentalRecord simulateCustomerRental(Customer customer){
 		// get cutomer rentals
-		int numRentals = customer.currentRentals().size();
+		int numRentals = customer.getRentals().size();
 		// calculate max num cars customer can rent
 		int maxCanRent = MAX_RENTALS - numRentals;
 		if(maxCanRent <= 0)
@@ -122,14 +122,14 @@ public class Simulator
 		int willRent = customer.chooseNumRentals();
 		if(maxCanRent < willRent)
 			willRent = maxCanRent;
-		int availableCars = this.store.inventory().size();
+		int availableCars = this.store.getInventory().size();
 		// make sure customer doesnt try to rent more cars than the store has
 		if(availableCars < willRent)
 			willRent = availableCars;
 		// choose between 1-MAX_NIGHTS num nights
 		int numNights = customer.chooseNumNights();
 		// create rental record
-		RentalRecord rentalRecord = new RentalRecord(this.store, customer, this.today.today(), numNights);
+		RentalRecord rentalRecord = new RentalRecord(this.store, customer, this.today.getToday(), numNights);
 		for(int i = 0; i < willRent; i++){
 			chooseOptions(this.store.rentCar(rentalRecord));
 		}
@@ -210,24 +210,24 @@ public class Simulator
 		int numCompleted = 0;
 		int numActive = 0;
 
-		List<RentalRecord> rentals = this.store.ledger();
+		List<RentalRecord> rentals = this.store.getLedger();
 		List<RentalRecord> completedRentals = new ArrayList<RentalRecord>();
 		List<RentalRecord> activeRentals = new ArrayList<RentalRecord>();
 		for(RentalRecord rr : rentals){
-			if(this.today.today() == rr.dayRented() || this.today.today() == (rr.dayRented() + rr.nightsRented())){
-				totalMadeToday += rr.total();
-				if(rr.status() == RentalRecord.RentalStatus.COMPLETE){
-					numCompleted += rr.rentals().size();
+			if(this.today.getToday() == rr.getDayRented() || this.today.getToday() == (rr.getDayRented() + rr.getNightsRented())){
+				totalMadeToday += rr.getTotal();
+				if(rr.getStatus() == RentalRecord.RentalStatus.COMPLETE){
+					numCompleted += rr.getRentals().size();
 					completedRentals.add(rr);
-				}else if(rr.status() == RentalRecord.RentalStatus.ACTIVE){
-					numActive += rr.rentals().size();
+				}else if(rr.getStatus() == RentalRecord.RentalStatus.ACTIVE){
+					numActive += rr.getRentals().size();
 					activeRentals.add(rr);
 				}
 			}
 		}
 
 		System.out.println("-----------------");
-		System.out.println("Day " + today.today() + " completed rentals: " + numCompleted);
+		System.out.println("Day " + today.getToday() + " completed rentals: " + numCompleted);
 		System.out.println("-----------------");
 		for(RentalRecord rr : completedRentals){
 			System.out.println(rr.toString());
@@ -235,7 +235,7 @@ public class Simulator
 		}
 
 		System.out.println("-----------------");
-		System.out.println("Day " + today.today() + " active rentals: " + numActive);
+		System.out.println("Day " + today.getToday() + " active rentals: " + numActive);
 		System.out.println("-----------------");
 		for(RentalRecord rr : activeRentals){
 			System.out.println(rr.toString());
@@ -243,8 +243,8 @@ public class Simulator
 		}
 
 		System.out.println("-----------------");
-		System.out.println("Cars left in store: " + this.store.inventory().size());
-		System.out.println("Total money store made on day " + this.today.today() + ": $" + totalMadeToday);
+		System.out.println("Cars left in store: " + this.store.getInventory().size());
+		System.out.println("Total money store made on day " + this.today.getToday() + ": $" + totalMadeToday);
 	}
 
 	/**
@@ -253,21 +253,21 @@ public class Simulator
 	private void printEndInfo(){
 		System.out.println("*****************");
 		System.out.println("Simulation completed");
-		System.out.println("  Simulated " + this.today.today() + " days.");
+		System.out.println("  Simulated " + this.today.getToday() + " days.");
 		System.out.println("*****************");
 
-		List<RentalRecord> rentals = this.store.ledger();
+		List<RentalRecord> rentals = this.store.getLedger();
 		int totalMade = 0;
 		for(RentalRecord rr : rentals){
-			totalMade += rr.total();
+			totalMade += rr.getTotal();
 		}
-		List<RentalRecord> completedRentals = this.store.completedRentals();
-		System.out.println("Total completed rentals: " + completedRentals.size());
+		List<RentalRecord> getCompletedRentals = this.store.getCompletedRentals();
+		System.out.println("Total completed rentals: " + getCompletedRentals.size());
 		int numCasual = 0;
 		int numRegular = 0;
 		int numBusiness = 0;
-		for(RentalRecord rr : completedRentals){
-			Customer renter = rr.rentedBy();
+		for(RentalRecord rr : getCompletedRentals){
+			Customer renter = rr.getRenter();
 			if(renter instanceof Casual){
 				numCasual++;
 			}else if(renter instanceof Regular){
@@ -298,8 +298,8 @@ public class Simulator
 		this.store = store;
 	}
 
-	public CarRentalStore getCustomers(){
-		return this.store;
+	public List<Customer> getCustomers(){
+		return this.customers;
 	}
 
 	public void setCustomers(List<Customer> customers){

@@ -28,7 +28,7 @@ public class CarRentalStore {
    *  @return
    *  The stores inventory
    */
-  public List<Car> inventory(){
+  public List<Car> getInventory(){
     return this.inventory;
   }
 
@@ -73,20 +73,11 @@ public class CarRentalStore {
     return rentalCar;
   }
 
-	/**
-	 *  @return
-   *    A random car in the inventory
-	 */
-  public Car getRandomCar(){
-    int carIndex = (new SecureRandom()).nextInt(this.inventory.size());
-    return this.inventory.get(carIndex);
-  }
-
   /**
    *  @return
    *    List of all RentalRecords
    */
-  public List<RentalRecord> ledger(){
+  public List<RentalRecord> getLedger(){
     return this.ledger;
   }
 
@@ -94,7 +85,7 @@ public class CarRentalStore {
    *  @return
    *    List of all active RentalRecords
    */
-  public List<RentalRecord> activeRentals(){
+  public List<RentalRecord> getActiveRentals(){
     return filterRecords(RentalRecord.RentalStatus.ACTIVE);
   }
 
@@ -102,7 +93,7 @@ public class CarRentalStore {
    *  @return
    *    List of all completed RentalRecords
    */
-  public List<RentalRecord> completedRentals(){
+  public List<RentalRecord> getCompletedRentals(){
     return filterRecords(RentalRecord.RentalStatus.COMPLETE);
   }
 
@@ -115,7 +106,7 @@ public class CarRentalStore {
   private List<RentalRecord> filterRecords(RentalRecord.RentalStatus status){
     List<RentalRecord> rentals = new ArrayList<RentalRecord>();
     for(RentalRecord rr : this.ledger){
-      if(rr.status() == status){
+      if(rr.getStatus() == status){
         rentals.add(rr);
       }
     }
